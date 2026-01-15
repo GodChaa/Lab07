@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TASK A1 (1 pt): Add Tailwind Play CDN in <head> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Random User (GET)</title>
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center bg-gray-100">
+    <!-- TASK A1 (2 pts): Create a centered card layout -->
+    <!-- Requirements:
+      - Title: Random User (GET)
+      - Button: Load user (id="btnLoad")
+      - Status text area (id="status")
+      - Result area (id="result") hidden at first (use class "hidden")
+      - Use at least 6 Tailwind utility classes (layout + spacing + typography)
+    -->
+      
+      <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-mdbg-white p-8 rounded-xl shadow-md w-full max-w-md"  >
+        <h1 class="text-2xl font-bold mb-4">Random User(GET)</h1>
+        <button id="btnLoad" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Load user</button>
+        <button id="btnClear" class="ml-2 bg-blue-500 text-white px-4 py-2 rounded-lg">Clear</button>
+        <div id="status" class="mt-4 text-gray-500">...</div>
+        <div id="result" class="hidden mt-4"></div>
+      </div>
+
+    <!-- Your UI here -->
+
+
+    <!-- TASK A1 (1 pt): Link get/app.js (use defer) -->
+    <script src="app.js" defer></script>
+  
+
+  </body>
+</html>
